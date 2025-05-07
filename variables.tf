@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "github_repo" {
     type = string
-    default = ""
+    default = "465-final-prod-env"
 }
 
 variable "github_token" {
@@ -14,5 +14,5 @@ variable "github_token" {
 
 variable "github_username" {
     type = string
-    default = "465-final-prod-env"
+    default = "ChristopherZinati"
 }
