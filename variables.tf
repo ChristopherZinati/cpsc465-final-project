@@ -1,0 +1,18 @@
+variable "aws_region" {
+    type = string
+    default = "us-west-1"
+}
+
+variable "github_repo" {
+    type = string
+    default = ""
+}
+
+variable "github_token" {
+    type = string
+}
+
+variable "github_username" {
+    type = string
+    default = "465-final-prod-env"
+}
