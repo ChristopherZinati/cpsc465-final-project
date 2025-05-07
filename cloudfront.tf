@@ -8,6 +8,7 @@ resource "aws_cloudfront_origin_access_control" "oac" {
 
 resource "aws_cloudfront_distribution" "cdn" {
   enabled = true
+  web_acl_id = aws_wafv2_web_acl.cloudfront_waf.arn
 
   origin {
     domain_name              = aws_s3_bucket.static_site.bucket_regional_domain_name
