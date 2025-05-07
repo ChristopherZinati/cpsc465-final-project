@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "static_site" {
-  bucket = "my-static-site-bucket"
+  bucket = "my-static-site-bucket-chris-z"
 }
 
 resource "aws_s3_bucket_ownership_controls" "ownership" {

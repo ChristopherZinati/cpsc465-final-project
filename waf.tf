@@ -1,6 +1,7 @@
 resource "aws_wafv2_web_acl" "cloudfront_waf" {
   name        = "cf-static-site-waf"
   description = "WAF for static website"
+  provider = aws
   scope       = "CLOUDFRONT"
   default_action {
     allow {}
